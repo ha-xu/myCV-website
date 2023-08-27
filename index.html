@@ -1,12 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="general.css">
 </head>
+
 <body>
-    <h1>hello world！</h1>
-    <p>a test page</p>
+    <div>
+        <div id="PWEnterTitle">
+            <h1>Welcome!</h1>
+        </div>
+        <div id="PWEnterBox">
+            <input placeholder="Please enter the code here">
+            <a href="#">
+                <img src="images/ArrowRightIcon.png">
+            </a>
+        </div>
+        <div id="PWEnterTip">
+            <p id="MainTip">You have to enter the code to visit the page.</p>
+            <p id="SubTip">This is to prevent irrelevant people from browsing the website to ensure better privacy.<br>
+                In most cases, the code will be directly attached to the url, meanwhile, you can find the code on the cv.</p>
+        </div>
+    </div>
+    
 </body>
+
 </html>
+
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        place-content: center;
+        align-items: center;
+    }
+
+    #PWEnterTitle{
+        width: 350px;
+        padding:0px 0px 10px 15px;
+    }
+
+    #PWEnterTitle h1{
+    background: linear-gradient(45deg, #36e1ff, #ff0fd6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+    }
+
+    #PWEnterBox {
+        height: 40px;
+        width: 350px;
+        border-radius: 30px;
+        border: 3px solid var(--theme-color-2);
+        background-color: rgb(44, 44, 44);
+        display: flex;
+        align-items: center;
+        place-content:space-between;
+        padding-left: 15px;
+        padding-right: 5px;
+        
+    }
+
+    #PWEnterBox input {
+        border: none;
+        width: 290px;
+        line-height: 30px;
+        background-color: transparent;
+        font-size: 20px;
+        color: white;
+    }
+
+    #PWEnterBox a {
+        display: flex;
+        align-items: center;
+        place-content: center;
+        border-radius: 15px;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(235, 235, 235);
+        transition: ease-in-out 0.3s;
+    }
+
+    #PWEnterBox a:hover{
+
+        background-color: rgb(189, 189, 189);
+
+    }
+
+    #PWEnterBox a img{
+        height: 20px;
+    }
+
+    #PWEnterBox input:focus {
+        outline: none;
+    }
+
+    #PWEnterTip{
+        width: 350px;
+        padding:10px 0px 0px 15px;
+    }
+
+    #MainTip{
+        color:rgb(203, 203, 203);
+        font-size:small;
+        font-weight: bold;
+    }
+    
+    #SubTip{
+        color:rgb(203, 203, 203);
+        font-size: x-small;
+    }
+</style>

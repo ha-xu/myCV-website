@@ -1,0 +1,15 @@
+:root {
+    --theme-color-1: #1d1d1d;
+    --theme-color-2: #3083e8;
+    --theme-color-3: #FFA500;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color:var(--theme-color-1);
+}
