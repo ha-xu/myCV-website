@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content>
+    <title>Verification</title>
+    <meta name="description" content="Authentication page">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="cssFiles/general.css">
     <link rel="stylesheet" href="cssFiles/index.css">
     <script src="jsFiles/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="jsFiles/sha3.js"></script>
     <script src="jsFiles/index.js"></script>
 </head>
 
@@ -20,7 +21,7 @@
         </div>
         <div id="PWEnterBox">
             <input placeholder="Please enter the code here">
-            <a href="#">
+            <a onclick="submitCode()">
                 <img src="images/ArrowRightIcon.png">
             </a>
         </div>
