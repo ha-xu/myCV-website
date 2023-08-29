@@ -4,23 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
+    <title>HomePage</title>
+    <meta name="description" content="cv xuzihan">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="cssFiles/general.css">
+    <script src="jsFiles/code.jquery.com_jquery-3.7.0.min.js"></script>
+
 </head>
 
 <body>
     <header></header>
     <section id="section1">
-        <div class="gradient scroll-show"></div>
+        <div id="gradientBack" class="gradient dynamicShow"></div>
+        <h1 id="titleHi" class="dynamicShow">Hi!</h1>
+        <h1 id="titleName" class="dynamicShow">I'M ZIHAN</h1>
+        <h1 id="titleWelcome" class="dynamicShow">WELCOME TO MY CV PAGE</h1>
     </section>
     <section id="section2">
-    <div class="gradient scroll-show"></div>
-        </section>
+    </section>
     <section id="section3">
-    <div class="gradient scroll-show"></div>
-        </section>
+    </section>
     <section id="section4"></section>
     <footer></footer>
 </body>
@@ -28,65 +31,141 @@
 </html>
 
 <script>
+    const scrollshowObjs = document.querySelectorAll('.dynamicShow');
+
+    function handleScroll() {
+        var showPos = window.innerHeight / 5 * 4;
+        var hidePos = -window.innerHeight / 2;
+        console.log(window.innerHeight);
+        scrollshowObjs.forEach(obj => {
+            const objPosition = obj.getBoundingClientRect().top;
+            console.log(objPosition);
+
+            if (objPosition < showPos) {
+                if (objPosition < hidePos) {
+                    obj.classList.add(obj.id + '-hide');
+                    obj.classList.remove(obj.id + '-show');
+
+                } else {
+                    obj.classList.add(obj.id + '-show');
+                    obj.classList.remove(obj.id + '-hide');
+                }
+            } else {
+                obj.classList.add(obj.id + '-hide');
+                obj.classList.remove(obj.id + '-show');
+            }
 
 
-    //const scrollshowObjs = document.querySelectorAll('.scroll-show');
+        });
 
-    // function handleScroll() {
-    //     const objPosition = scrollshowObjs[0].getBoundingClientRect().top;
+    }
 
-    //     // if (objPosition < windowHeight / 1.5) {
-    //     //     scrollshowObjs.classList.add('fade-up-in');
-    //     // }
+    window.addEventListener('scroll', handleScroll);
 
-
-            
-    //             console.log( objPosition);
-                
-    //             //scrollshowObjs[0].classList.add('fade-up-in');
-            
-    // }
-
-    //window.addEventListener('scroll', handleScroll);
+    $(document).ready(function() {
+        handleScroll();
+    });
 </script>
 
 <style>
-
-    .scroll-show{
-        opacity: 1;
-        transform: translateY(10px);
+    /* section1 Titles */
+    
+    #titleHi {
+        position: absolute;
+        top: 100px;
+        left: 15%;
+    }
+    
+    .titleHi-show {
+        opacity: 1 !important;
+        transform: translateY(-20px);
+        transition: ease-in-out 1s;
+    }
+    
+    .titleHi-hide {
+        opacity: 0 !important;
+        transform: translateY(20px);
+        transition: ease-in-out 1s;
+    }
+    
+    #titleName {
+        position: absolute;
+        top: 100px;
+        left: calc(15% + 80px);
+    }
+    
+    .titleName-show {
+        opacity: 1 !important;
+        transform: translateY(-20px);
+        transition: ease-in-out 1s;
+        transition-delay: 0.5s;
+    }
+    
+    .titleName-hide {
+        opacity: 0 !important;
+        transform: translateY(20px);
+        transition: ease-in-out 1s;
+    }
+    
+    #titleWelcome {
+        position: absolute;
+        top: 180px;
+        left: 15%;
+    }
+    
+    .titleWelcome-show {
+        opacity: 1 !important;
+        transform: translateY(-20px);
+        transition: ease-in-out 1s;
+        transition-delay: 1s;
+    }
+    
+    .titleWelcome-hide {
+        opacity: 0 !important;
+        transform: translateY(20px);
+        transition: ease-in-out 1s;
+    }
+    
+    .gradientBack-show {
+        opacity: 1 !important;
+        /* transform: translateY(10px); */
         transition: ease-in-out 2s;
     }
-
+    
+    .gradientBack-hide {
+        opacity: 0 !important;
+        /* transform: translateY(-10px); */
+        transition: ease-in-out 2s;
+    }
+    
     #section1 {
         display: flex;
         align-items: center;
         place-content: center;
         overflow: hidden;
+        position: relative;
     }
-
+    
     #section2 {
         overflow: hidden;
         background-color: #e0e0e0;
     }
-
+    
     #section3 {
         overflow: hidden;
         background-color: #1f1f1f;
     }
-
+    
     #section4 {
         overflow: hidden;
         background-color: #606060;
     }
-
     /* this background refrence:https://codepen.io/Jeromche/pen/KKQrGgP */
+    
     .gradient {
         --size: 600px;
         --speed: 50s;
         --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
-
-        opacity: 0;
         width: var(--size);
         height: var(--size);
         filter: blur(calc(var(--size) / 5));
@@ -94,17 +173,20 @@
         animation: rotate var(--speed) var(--easing) alternate infinite;
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     }
-
+    
+    .dynamicShow {
+        opacity: 0;
+    }
+    
     @media (max-width: 720px) {
         .gradient {
             --size: 300px;
         }
-
         section {
             height: 450px !important;
         }
     }
-
+    
     section {
         width: 100%;
         height: 600px;

@@ -2,7 +2,6 @@
     --theme-color-1: #1d1d1d;
     --theme-color-2: #3083e8;
     --theme-color-3: #FFA500;
-
 }
 
 * {
@@ -12,6 +11,12 @@
 
 body {
     background-color: var(--theme-color-1);
+}
+
+h1 {
+    font-family: 'TitleFont';
+    font-size: 60px;
+    color: white;
 }
 
 header {
@@ -28,6 +33,7 @@ footer {
 
 
 /* animations */
+
 .fade-up-in {
     animation: fade-up-in 2s ease-in-out alternate;
 }
@@ -37,7 +43,6 @@ footer {
         opacity: 0;
         transform: translateY(10px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -48,8 +53,15 @@ footer {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
+}
+
+
+/* fonts */
+
+@font-face {
+    font-family: 'TitleFont';
+    src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
 }
