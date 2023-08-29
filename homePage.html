@@ -1,14 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <script src="" async defer></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cssFiles/general.css">
+</head>
+
+<body>
+    <header></header>
+    <section id="section1">
+        <div class="gradient scroll-show"></div>
+    </section>
+    <section id="section2">
+    <div class="gradient scroll-show"></div>
+        </section>
+    <section id="section3">
+    <div class="gradient scroll-show"></div>
+        </section>
+    <section id="section4"></section>
+    <footer></footer>
+</body>
+
 </html>
+
+<script>
+
+
+    //const scrollshowObjs = document.querySelectorAll('.scroll-show');
+
+    // function handleScroll() {
+    //     const objPosition = scrollshowObjs[0].getBoundingClientRect().top;
+
+    //     // if (objPosition < windowHeight / 1.5) {
+    //     //     scrollshowObjs.classList.add('fade-up-in');
+    //     // }
+
+
+            
+    //             console.log( objPosition);
+                
+    //             //scrollshowObjs[0].classList.add('fade-up-in');
+            
+    // }
+
+    //window.addEventListener('scroll', handleScroll);
+</script>
+
+<style>
+
+    .scroll-show{
+        opacity: 1;
+        transform: translateY(10px);
+        transition: ease-in-out 2s;
+    }
+
+    #section1 {
+        display: flex;
+        align-items: center;
+        place-content: center;
+        overflow: hidden;
+    }
+
+    #section2 {
+        overflow: hidden;
+        background-color: #e0e0e0;
+    }
+
+    #section3 {
+        overflow: hidden;
+        background-color: #1f1f1f;
+    }
+
+    #section4 {
+        overflow: hidden;
+        background-color: #606060;
+    }
+
+    /* this background refrence:https://codepen.io/Jeromche/pen/KKQrGgP */
+    .gradient {
+        --size: 600px;
+        --speed: 50s;
+        --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+        opacity: 0;
+        width: var(--size);
+        height: var(--size);
+        filter: blur(calc(var(--size) / 5));
+        background-image: linear-gradient(#36e1ff, #ff0fd7d2);
+        animation: rotate var(--speed) var(--easing) alternate infinite;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+
+    @media (max-width: 720px) {
+        .gradient {
+            --size: 300px;
+        }
+
+        section {
+            height: 450px !important;
+        }
+    }
+
+    section {
+        width: 100%;
+        height: 600px;
+    }
+</style>

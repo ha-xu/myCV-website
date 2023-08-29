@@ -39,6 +39,7 @@ $(document).ready(function() {
   });
 
   function submitCode(){
+    
     var enteredText = $("#PWEnterBox input").val();
     var encryptedCode = CryptoJS.SHA3(enteredText);
     

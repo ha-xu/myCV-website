@@ -5,19 +5,21 @@ body {
     align-items: center;
 }
 
-#PWEnterTitle{
+#PWEnterTitle {
     width: 350px;
-    padding:0px 0px 10px 15px;
+    padding: 0px 0px 10px 15px;
     transition: ease-in-out 0.5s;
 
 }
 
-#PWEnterTitle h1{
-background: linear-gradient(45deg, #36e1ff, #ff0fd6);
--webkit-background-clip: text;
-background-clip: text;
-color: transparent;
-width: fit-content;
+#PWEnterTitle h1 {
+    background: linear-gradient(0deg, #36e1ff, #ff0fd6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+    
+    animation: background-rotate 2s ease-in-out alternate infinite;
 }
 
 #PWEnterBox {
@@ -28,7 +30,7 @@ width: fit-content;
     background-color: rgb(44, 44, 44);
     display: flex;
     align-items: center;
-    place-content:space-between;
+    place-content: space-between;
     padding-left: 15px;
     padding-right: 5px;
     transition: ease-in-out 0.5s;
@@ -54,13 +56,13 @@ width: fit-content;
     transition: ease-in-out 0.3s;
 }
 
-#PWEnterBox a:hover{
+#PWEnterBox a:hover {
 
     background-color: rgb(189, 189, 189);
-
+    cursor:pointer;
 }
 
-#PWEnterBox a img{
+#PWEnterBox a img {
     height: 20px;
 }
 
@@ -68,19 +70,19 @@ width: fit-content;
     outline: none;
 }
 
-#PWEnterTip{
+#PWEnterTip {
     width: 350px;
-    padding:10px 0px 0px 15px;
+    padding: 10px 0px 0px 15px;
 }
 
-#MainTip{
-    color:rgb(203, 203, 203);
-    font-size:small;
+#MainTip {
+    color: rgb(203, 203, 203);
+    font-size: small;
     font-weight: bold;
     padding-bottom: 5px;
 }
 
-#SubTip{
-    color:rgb(203, 203, 203);
+#SubTip {
+    color: rgb(203, 203, 203);
     font-size: x-small;
-}     
+}
