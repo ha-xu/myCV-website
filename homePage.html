@@ -7,21 +7,38 @@
     <title>HomePage</title>
     <meta name="description" content="cv xuzihan">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/home_icon.png">
     <link rel="stylesheet" href="cssFiles/general.css">
+
     <script src="jsFiles/code.jquery.com_jquery-3.7.0.min.js"></script>
 
 </head>
 
 <body>
-    <header></header>
+    <header class="fade-down-in">
+        <div id="headerFront">
+            <a href="homePage.html" title="Go to the HomePage" id="homeLink" class="fade-down-in"><img src="images/home_icon.png"></a>
+        </div>
+        <ul>
+            <li class="fade-down-in"><a href="#">My experience</a></li>
+            <li class="fade-down-in"><a href="#">My exploration</a></li>
+            <li class="fade-down-in"><a href="#">My abilities</a></li>
+            <li class="fade-down-in"><a href="#" >My direction</a></li>
+            <li class="fade-down-in"><a href="#">About this Site</a></li>
+        </ul>
+        <div id="headerBack">
+            <p id="headerName">XU ZIHAN</p>
+        </div>
+    </header>
+
     <section id="section1">
         <div id="gradientBack" class="gradient dynamicShow"></div>
-        <h1 id="titleHi" class="dynamicShow">Hi!</h1>
         <h1 id="titleName" class="dynamicShow">I'm ZIHAN</h1>
-        <h1 id="titleWelcome" class="dynamicShow">Welcome to my CV page.</h1>
-        <h1 id="titleProgrammer" class="dynamicShow">I am a programmer,</h1>
+        <h1 id="titleWelcome" class="dynamicShow">Welcome to my page</h1>
+        <h1 id="titleProgrammer" class="dynamicShow">A programmer,</h1>
         <h1 id="titleChallenger" class="dynamicShow">a challenger,</h1>
-        <h1 id="titleExplorer" class="dynamicShow">and a explorer.</h1>
+        <h1 id="titleExplorer" class="dynamicShow">a explorer.</h1>
+        <p id="pageDescription" class="dynamicShow">Here you can learn all about my experience, my abilities, my research directions, etc.</p>
     </section>
     <section id="section2">
     </section>
@@ -38,10 +55,10 @@
 
     function handleScroll() {
         var showPos = window.innerHeight / 5 * 4;
-        var hidePos = -window.innerHeight / 2;
+        var hidePos = window.innerHeight / 8;
 
         scrollshowObjs.forEach(obj => {
-            const objPosition = obj.getBoundingClientRect().top;
+            const objPosition = (obj.getBoundingClientRect().top + obj.getBoundingClientRect().bottom)/2;
 
             if (objPosition < showPos) {
                 if (objPosition < hidePos) {
@@ -70,12 +87,21 @@
 </script>
 
 <style>
+
+
+h1 {
+    font-family: 'TitleFont';
+    font-size: 50px;
+    color: white;
+}
+
+
     /* -----------------------section1------------------------ */
     
-    #titleHi {
+    /* #titleHi {
+        font-size: 60px;
         position: absolute;
-        top: 100px;
-        left: 15%;
+        top: 80px;
     }
     
     .titleHi-show {
@@ -86,21 +112,22 @@
     
     .titleHi-hide {
         opacity: 0 !important;
-        transform: translateY(20px);
+        transform: translateY(-20px);
         transition: ease-in-out 1s;
-    }
+    } */
     
     #titleName {
+        font-size: 40px;
         position: absolute;
-        top: 100px;
-        left: calc(15% + 90px);
+        top: 380px;
+        right: 8%;
     }
     
     .titleName-show {
         opacity: 1 !important;
         transform: translateY(-20px);
         transition: ease-in-out 1s;
-        transition-delay: 0.5s;
+        transition-delay: 3s;
     }
     
     .titleName-hide {
@@ -111,15 +138,16 @@
     
     #titleWelcome {
         position: absolute;
-        top: 180px;
-        left: 15%;
+        top: 420px;
+        right: 8%;
+        font-size: 40px;
     }
     
     .titleWelcome-show {
         opacity: 1 !important;
         transform: translateY(-20px);
         transition: ease-in-out 1s;
-        transition-delay: 1s;
+        transition-delay: 4s;
     }
     
     .titleWelcome-hide {
@@ -127,18 +155,57 @@
         transform: translateY(20px);
         transition: ease-in-out 1s;
     }
+
+    #pageDescription{
+        position: absolute;
+        top: 490px;
+        right: 8%;
+        font-size: 20px;
+        width: 40%;
+        text-wrap: balance;
+    text-align: right;
+    color: white;
+    padding-top: 15px;
+    }
+
+    #pageDescription::before{
+        content: "";
+    display: block;
+    width: 60px;
+    height: 6px;
+    margin: 0.39285em 0 0.423em;
+    position: absolute;
+    right: 0px;
+    background: #a3d2ff;
+    top: -8px;
+    }
+
+    
+    .pageDescription-show {
+        opacity: 1 !important;
+        transform: translateY(-20px);
+        transition: ease-in-out 1s;
+        transition-delay: 4.5s;
+    }
+    
+    .pageDescription-hide {
+        opacity: 0 !important;
+        transform: translateY(20px);
+        transition: ease-in-out 1s;
+    }
+
     
     #titleProgrammer {
         position: absolute;
-        top: 260px;
-        left: 15%;
+        top: 80px;
+        left: 20%;
     }
     
     .titleProgrammer-show {
         opacity: 1 !important;
         transform: translateY(-20px);
         transition: ease-in-out 1s;
-        transition-delay: 1.5s;
+        transition-delay: 0s;
     }
     
     .titleProgrammer-hide {
@@ -149,15 +216,17 @@
     
     #titleChallenger {
         position: absolute;
-        top: 340px;
-        left: 15%;
+        top: 165px;
+        left: 35%;
+        font-size: 70px;
+
     }
     
     .titleChallenger-show {
         opacity: 1 !important;
         transform: translateY(-20px);
         transition: ease-in-out 1s;
-        transition-delay: 2s;
+        transition-delay: 1s;
     }
     
     .titleChallenger-hide {
@@ -168,15 +237,17 @@
     
     #titleExplorer {
         position: absolute;
-        top: 420px;
-        left: 15%;
+        top: 250px;
+        left: 8%;
+        font-size: 120px;
     }
+
     
     .titleExplorer-show {
         opacity: 1 !important;
         transform: translateY(-20px);
         transition: ease-in-out 1s;
-        transition-delay: 2.5s;
+        transition-delay: 2s;
     }
     
     .titleExplorer-hide {
@@ -203,22 +274,30 @@
         place-content: center;
         overflow: hidden;
         position: relative;
+        height: 600px;
+
     }
     /* -----------------------section2------------------------ */
     
     #section2 {
         overflow: hidden;
         background-color: #e0e0e0;
+        height: 600px;
+
     }
     
     #section3 {
         overflow: hidden;
         background-color: #1f1f1f;
+        height: 600px;
+
     }
     
     #section4 {
         overflow: hidden;
         background-color: #606060;
+        height: 600px;
+
     }
     /* this background refrence:https://codepen.io/Jeromche/pen/KKQrGgP */
     
@@ -232,6 +311,8 @@
         background-image: linear-gradient(#36e1ff, #ff0fd7d2);
         animation: rotate var(--speed) var(--easing) alternate infinite;
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+        z-index: -1;
     }
     
     .dynamicShow {
@@ -242,13 +323,9 @@
         .gradient {
             --size: 300px;
         }
-        section {
-            height: 450px !important;
-        }
     }
     
     section {
         width: 100%;
-        height: 600px;
     }
 </style>

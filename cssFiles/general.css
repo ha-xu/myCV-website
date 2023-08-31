@@ -9,21 +9,91 @@
     margin: 0px;
 }
 
+p,h1,h2,h3,h4,a{
+    text-wrap:nowrap;
+    overflow: hidden;
+}
+
 body {
     background-color: var(--theme-color-1);
 }
 
-h1 {
-    font-family: 'TitleFont';
-    font-size: 60px;
-    color: white;
+a{
+    text-decoration: none;
 }
+
+ul{
+    list-style: none;
+}
+
+
+/* ----------------------------header------------------------ */
 
 header {
     height: 50px;
     background-color: #161616;
     width: 100%;
+    display: flex;
+    align-items: center;
 }
+
+#headerFront{
+    width: 10%;
+    height: 50px;
+}
+
+#headerBack{
+    width: 10%;
+    height: 50px;
+}
+
+header ul{
+    display: flex;
+    width: 80%;
+    place-content: center;
+    height: 50px;
+    align-items: center;
+}
+
+header ul li{
+    padding:0px 20px;
+    font-size: 15px;
+
+}
+
+header ul a{
+    color: white;
+    font-family: 'HeaderFont';
+}
+
+header ul a:hover{
+    text-decoration: underline;
+}
+
+
+#homeLink{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin-left: 20px;
+
+}
+#homeLink img{
+    width: 20px;
+}
+
+#headerName{
+    width: fit-content;
+    margin-left: auto;
+    line-height: 50px;
+    margin-right: 20px;
+    color: white;
+    font-family: 'HeaderFont';
+}
+
+
+/* --------------------------footer------------------------ */
+
 
 footer {
     height: 250px;
@@ -38,10 +108,25 @@ footer {
     animation: fade-up-in 2s ease-in-out alternate;
 }
 
+.fade-down-in {
+    animation: fade-down-in 2s ease-in-out alternate;
+}
+
 @keyframes fade-up-in {
     from {
         opacity: 0;
         transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-down-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
     }
     to {
         opacity: 1;
@@ -65,3 +150,9 @@ footer {
     font-family: 'TitleFont';
     src: url('../fonts/BreeSerif-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'HeaderFont';
+    src: url('../fonts/Manrope-ExtraLight.ttf') format('truetype');
+}
+
