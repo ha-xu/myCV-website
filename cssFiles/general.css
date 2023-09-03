@@ -156,3 +156,8 @@ footer {
     src: url('../fonts/Manrope-ExtraLight.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Niconne';
+    src: url('../fonts/Niconne-Regular.ttf') format('truetype');
+}
+

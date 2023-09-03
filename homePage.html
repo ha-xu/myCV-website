@@ -17,13 +17,14 @@
 <body>
     <header class="fade-down-in">
         <div id="headerFront">
-            <a href="homePage.html" title="Go to the HomePage" id="homeLink" class="fade-down-in"><img src="images/home_icon.png"></a>
+            <a href="homePage.html" title="Go to the HomePage" id="homeLink" class="fade-down-in"><img
+                    src="images/home_icon.png"></a>
         </div>
         <ul>
             <li class="fade-down-in"><a href="#">My experience</a></li>
             <li class="fade-down-in"><a href="#">My exploration</a></li>
             <li class="fade-down-in"><a href="#">My abilities</a></li>
-            <li class="fade-down-in"><a href="#" >My direction</a></li>
+            <li class="fade-down-in"><a href="#">My direction</a></li>
             <li class="fade-down-in"><a href="#">About this Site</a></li>
         </ul>
         <div id="headerBack">
@@ -37,10 +38,24 @@
         <h1 id="titleWelcome" class="dynamicShow">Welcome to my page</h1>
         <h1 id="titleProgrammer" class="dynamicShow">A programmer,</h1>
         <h1 id="titleChallenger" class="dynamicShow">a challenger,</h1>
-        <h1 id="titleExplorer" class="dynamicShow">a explorer.</h1>
-        <p id="pageDescription" class="dynamicShow">Here you can learn all about my experience, my abilities, my research directions, etc.</p>
+        <h1 id="titleExplorer" data-text="an Explorer." class="dynamicShow">an Explorer.</h1>
+        <p id="pageDescription" class="dynamicShow">Here you can learn all about my experience, my abilities, my
+            research directions, etc.</p>
     </section>
     <section id="section2">
+        <h2 id="qualityTitle" class="dynamicShow">Qualities in me</h2>
+        <img src="images/portrait.png" class="dynamicShow" alt="Avatar" id="avatar">
+        <div><p>Creativity</p></div>
+        <p>independence</p>
+        <p>spirit of exploration</p>
+        <p>Curiosity</p>
+        <p>Perfectionism</p>
+        <p>Diligent</p>
+        <p>pursuit of excellence</p>
+    </section>
+
+    <section id="section2_add">
+
     </section>
     <section id="section3">
     </section>
@@ -55,10 +70,10 @@
 
     function handleScroll() {
         var showPos = window.innerHeight / 5 * 4;
-        var hidePos = window.innerHeight / 8;
+        var hidePos = window.innerHeight / 9;
 
         scrollshowObjs.forEach(obj => {
-            const objPosition = (obj.getBoundingClientRect().top + obj.getBoundingClientRect().bottom)/2;
+            const objPosition = (obj.getBoundingClientRect().top + obj.getBoundingClientRect().bottom) / 2;
 
             if (objPosition < showPos) {
                 if (objPosition < hidePos) {
@@ -81,23 +96,21 @@
 
     window.addEventListener('scroll', handleScroll);
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         handleScroll();
     });
 </script>
 
 <style>
-
-
-h1 {
-    font-family: 'TitleFont';
-    font-size: 50px;
-    color: white;
-}
+    h1 {
+        font-family: 'TitleFont';
+        font-size: 50px;
+        color: white;
+    }
 
 
     /* -----------------------section1------------------------ */
-    
+
     /* #titleHi {
         font-size: 60px;
         position: absolute;
@@ -115,105 +128,105 @@ h1 {
         transform: translateY(-20px);
         transition: ease-in-out 1s;
     } */
-    
+
     #titleName {
         font-size: 40px;
         position: absolute;
         top: 380px;
         right: 8%;
     }
-    
+
     .titleName-show {
         opacity: 1 !important;
         transform: translateY(-20px);
         transition: ease-in-out 1s;
-        transition-delay: 3s;
+        transition-delay: 2.3s;
     }
-    
+
     .titleName-hide {
         opacity: 0 !important;
-        transform: translateY(20px);
-        transition: ease-in-out 1s;
+        transform: translateY(0px);
+        transition: ease-in-out 0.3s;
     }
-    
+
     #titleWelcome {
         position: absolute;
         top: 420px;
         right: 8%;
         font-size: 40px;
     }
-    
+
     .titleWelcome-show {
         opacity: 1 !important;
         transform: translateY(-20px);
         transition: ease-in-out 1s;
-        transition-delay: 4s;
-    }
-    
-    .titleWelcome-hide {
-        opacity: 0 !important;
-        transform: translateY(20px);
-        transition: ease-in-out 1s;
+        transition-delay: 2.8s;
     }
 
-    #pageDescription{
+    .titleWelcome-hide {
+        opacity: 0 !important;
+        transform: translateY(0px);
+        transition: ease-in-out 0.3s;
+    }
+
+    #pageDescription {
         position: absolute;
         top: 490px;
         right: 8%;
         font-size: 20px;
         width: 40%;
         text-wrap: balance;
-    text-align: right;
-    color: white;
-    padding-top: 15px;
+        text-align: right;
+        color: white;
+        padding-top: 15px;
     }
 
-    #pageDescription::before{
+    #pageDescription::before {
         content: "";
-    display: block;
-    width: 60px;
-    height: 6px;
-    margin: 0.39285em 0 0.423em;
-    position: absolute;
-    right: 0px;
-    background: #a3d2ff;
-    top: -8px;
+        display: block;
+        width: 60px;
+        height: 6px;
+        margin: 0.39285em 0 0.423em;
+        position: absolute;
+        right: 0px;
+        background: #a3d2ff;
+        top: -8px;
     }
 
-    
+
     .pageDescription-show {
         opacity: 1 !important;
         transform: translateY(-20px);
         transition: ease-in-out 1s;
-        transition-delay: 4.5s;
-    }
-    
-    .pageDescription-hide {
-        opacity: 0 !important;
-        transform: translateY(20px);
-        transition: ease-in-out 1s;
+        transition-delay: 3.3s;
     }
 
-    
+    .pageDescription-hide {
+        opacity: 0 !important;
+        transform: translateY(0px);
+        transition: ease-in-out 0.3s;
+    }
+
+
     #titleProgrammer {
         position: absolute;
         top: 80px;
         left: 20%;
     }
-    
+
     .titleProgrammer-show {
         opacity: 1 !important;
         transform: translateY(-20px);
         transition: ease-in-out 1s;
         transition-delay: 0s;
     }
-    
+
     .titleProgrammer-hide {
         opacity: 0 !important;
-        transform: translateY(20px);
-        transition: ease-in-out 1s;
+        transform: translateY(0px);
+        transition: ease-in-out 0.3s;
     }
-    
+
     #titleChallenger {
         position: absolute;
         top: 165px;
@@ -221,53 +234,71 @@ h1 {
         font-size: 70px;
 
     }
-    
+
     .titleChallenger-show {
         opacity: 1 !important;
         transform: translateY(-20px);
         transition: ease-in-out 1s;
-        transition-delay: 1s;
+        transition-delay: 0.6s;
     }
-    
+
     .titleChallenger-hide {
         opacity: 0 !important;
-        transform: translateY(20px);
-        transition: ease-in-out 1s;
+        transform: translateY(0px);
+        transition: ease-in-out 0.3s;
     }
-    
+
+
+
     #titleExplorer {
+
+        --hs: 225, 100%;
+        --paper: hsl(var(--hs), 25%);
+        --highlight: hsl(var(--hs), 45%);
+        --shadow: hsl(var(--hs), 15%);
+
+
         position: absolute;
         top: 250px;
         left: 8%;
         font-size: 120px;
+
+
+
+        background: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        width: fit-content;
+
     }
 
-    
+
     .titleExplorer-show {
         opacity: 1 !important;
         transform: translateY(-20px);
         transition: ease-in-out 1s;
-        transition-delay: 2s;
+        transition-delay: 1.7s;
     }
-    
+
     .titleExplorer-hide {
         opacity: 0 !important;
-        transform: translateY(20px);
-        transition: ease-in-out 1s;
+        transform: translateY(0px);
+        transition: ease-in-out 0.3s;
     }
-    
+
     .gradientBack-show {
         opacity: 1 !important;
         /* transform: translateY(10px); */
         transition: ease-in-out 2s;
     }
-    
+
     .gradientBack-hide {
         opacity: 0 !important;
         /* transform: translateY(-10px); */
-        transition: ease-in-out 2s;
+        transition: ease-in-out 1s;
     }
-    
+
     #section1 {
         display: flex;
         align-items: center;
@@ -275,32 +306,89 @@ h1 {
         overflow: hidden;
         position: relative;
         height: 600px;
-
+        background-color: #1f1f1f;
     }
+
     /* -----------------------section2------------------------ */
-    
-    #section2 {
-        overflow: hidden;
-        background-color: #e0e0e0;
-        height: 600px;
 
-    }
-    
-    #section3 {
+    #section2 {
         overflow: hidden;
         background-color: #1f1f1f;
         height: 600px;
+        position: relative;
 
     }
+
+    #section2 h2{
+        color:white;
+        border-left: 10px solid #a3d2ff;
+        padding: 20px 0px 0px 10px;
+    font-family: 'TitleFont';
+    margin: 30px 0px 0px 8%;
+    font-size: 55px;
+    }
+
+     
+    .qualityTitle-show {
+        opacity: 1 !important;
+        transform: translateY(-20px);
+        transition: ease-in-out 1s;
+        transition-delay: 0s;
+    }
+
+    .qualityTitle-hide {
+        opacity: 0 !important;
+        transform: translateY(0px);
+        transition: ease-in-out 0.3s;
+    }
+
+
+    #avatar {
+        position: absolute;
+        vertical-align: middle;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(111, 134, 166, 1) 8%, rgba(179, 209, 251, 1) 79%);
+        top: 250px;
+        left: 30%;
+    }
+
     
+    .avatar-show {
+        opacity: 1 !important;
+        transition: ease-in-out 2s;
+        transition-delay: 0s;
+    }
+
+    .avatar-hide {
+        opacity: 0 !important;
+        transition: ease-in-out 0.3s;
+    }
+    /* -----------------------section2_add------------------------ */
+#section2_add{
+        overflow: hidden;
+        background-color: #2d2d2d;
+        height: 200px;
+}
+
+    /* -----------------------section3------------------------ */
+    #section3 {
+        overflow: hidden;
+        background-color: #d9d9d9;
+        height: 600px;
+
+    }
+
     #section4 {
         overflow: hidden;
         background-color: #606060;
         height: 600px;
 
     }
+
     /* this background refrence:https://codepen.io/Jeromche/pen/KKQrGgP */
-    
+
     .gradient {
         --size: 600px;
         --speed: 50s;
@@ -308,23 +396,23 @@ h1 {
         width: var(--size);
         height: var(--size);
         filter: blur(calc(var(--size) / 5));
-        background-image: linear-gradient(#36e1ff, #ff0fd7d2);
+        background-image: linear-gradient(rgba(55, 235, 169, 0.85), rgb(91, 55, 235));
         animation: rotate var(--speed) var(--easing) alternate infinite;
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 
-        z-index: -1;
+        z-index: 0;
     }
-    
+
     .dynamicShow {
         opacity: 0;
     }
-    
+
     @media (max-width: 720px) {
         .gradient {
             --size: 300px;
         }
     }
-    
+
     section {
         width: 100%;
     }
