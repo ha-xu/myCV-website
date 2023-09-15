@@ -10,8 +10,7 @@
 }
 
 p,h1,h2,h3,h4,a{
-    text-wrap:nowrap;
-    overflow: hidden;
+    text-wrap:wrap;
 }
 
 body {
@@ -26,6 +25,9 @@ ul{
     list-style: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 /* ----------------------------header------------------------ */
 
@@ -161,3 +163,10 @@ footer {
     src: url('../fonts/Niconne-Regular.ttf') format('truetype');
 }
 
+
+
+
+@font-face {
+    font-family: 'MarckScript';
+    src: url('../fonts/MarckScript-Regular.ttf') format('truetype');
+}

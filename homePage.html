@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HomePage</title>
     <meta name="description" content="cv xuzihan">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=2">
     <link rel="icon" href="images/home_icon.png">
     <link rel="stylesheet" href="cssFiles/general.css">
-
+    <link rel="stylesheet" href="cssFiles/homePage.css">
     <script src="jsFiles/code.jquery.com_jquery-3.7.0.min.js"></script>
 
 </head>
@@ -45,19 +45,89 @@
     <section id="section2">
         <h2 id="qualityTitle" class="dynamicShow">Qualities in me</h2>
         <img src="images/portrait.png" class="dynamicShow" alt="Avatar" id="avatar">
-        <div><p>Creativity</p></div>
-        <p>independence</p>
-        <p>spirit of exploration</p>
-        <p>Curiosity</p>
-        <p>Perfectionism</p>
-        <p>Diligent</p>
-        <p>pursuit of excellence</p>
+        <a href="#section2" id="Creativity" class="quality dynamicShow">Creativity</a>
+        <a id="Independence" class="quality dynamicShow">Independence</a>
+        <a id="exploration" class="quality dynamicShow">Spirit of exploration</a>
+        <a id="Curiosity" class="quality dynamicShow">Curiosity</a>
+        <a id="Perfectionism" class="quality dynamicShow">Perfectionism</a>
+        <a id="Diligent" class="quality dynamicShow">Diligent</a>
+        <a id="excellence" class="quality dynamicShow">Pursuit of excellence</a>
     </section>
 
     <section id="section2_add">
-
+        <p id="quality-description-title">Spirit of exploration</p>
+        <p id="quality-description-content">The eagerness of explore unknown things is in me, especially the principles
+            behind the programs or games.<br> I could be extremely curious about how these fasinating games being
+            created, wonder how intelligent the programmers and designers are. </p>
+        <!-- https://codepen.io/alvarotrigo/pen/eYEqPZa -->
     </section>
     <section id="section3">
+        <h2 id="expTitle" class="dynamicShow">Education <span style="color: #73a4d4;">&</span> Experience</h2>
+        <div id="experience">
+            <img id="expLine" src="images/expline.png">
+            <div id="beijing" class="cities">
+                <div id="EXP1" class="expTexts dynamicShow">
+                    <p class="expTitle">Beijing</p>
+                    <p class="expTime">2019.7 - 2020.1</p>
+                    <p class="expContent">Six months of French study at <br> Beijing Language & Culture University </p>
+                </div>
+
+                <img id="EXP2" class="dynamicShow" src="images/BLCU.png">
+            </div>
+
+            <div id="IutFrench" class="cities">
+                <div id="EXP3" class="expTexts dynamicShow">
+                    <p class="expTitle">Paris</p>
+                    <p class="expTime">2021.1 - 2021.6</p>
+                    <p class="expContent">Six months of French study at <br> Université Paris-Saclay <br> IUT d'Orsay
+                    </p>
+                </div>
+
+                <img id="EXP4" class="dynamicShow" src="images/IUTORSAY.png">
+            </div>
+
+            <div id="Iut1" class="cities">
+                <div id="EXP5" class="expTexts dynamicShow">
+                    <p class="expTitle">Paris</p>
+                    <p class="expTime">2021.9 - 2022.6</p>
+                    <p class="expContent">First year of university<br> Study Computer Science at <br> Université
+                        Paris-Saclay <br> IUT d'Orsay </p>
+                </div>
+
+                <img id="EXP6" class="dynamicShow" src="images/IUTORSAY.png">
+            </div>
+
+            <div id="l2" class="cities">
+                <div id="EXP7" class="expTexts dynamicShow">
+                    <p class="expTitle">Grenoble</p>
+                    <p class="expTime">2022.9 - 2023.6</p>
+                    <p class="expContent">Second year of university<br> Study Computer Science and Maths at <br>
+                        Université Paris-Saclay <br> IUT d'Orsay </p>
+                </div>
+
+                <img id="EXP8" class="dynamicShow" src="images/UGA.png">
+            </div>
+
+
+
+            <div id="l3" class="cities">
+                <div id="EXP9" class="expTexts dynamicShow">
+                    <p class="expTitle">Paris</p>
+                    <p class="expTime">2023.6 - now</p>
+                    <p class="expContent">Third year of university <br> Study Computer Science at <br> Université
+                        Paris-Saclay <br> IUT d'Orsay </p>
+                </div>
+
+                <img id="EXP10" class="dynamicShow" src="images/l3Info.png">
+            </div>
+        </div>
+
+        <div id="expflags">
+            <img id="cnflag" src="images/chinese-flag.png">
+            <img id="flagallow" src="images/ArrowRightIcon.png">
+            <img id="frflag" src="images/france.png">
+        </div>
+
     </section>
     <section id="section4"></section>
     <footer></footer>
@@ -69,8 +139,9 @@
     const scrollshowObjs = document.querySelectorAll('.dynamicShow');
 
     function handleScroll() {
+
         var showPos = window.innerHeight / 5 * 4;
-        var hidePos = window.innerHeight / 9;
+        var hidePos = window.innerHeight / 18;
 
         scrollshowObjs.forEach(obj => {
             const objPosition = (obj.getBoundingClientRect().top + obj.getBoundingClientRect().bottom) / 2;
@@ -92,6 +163,10 @@
 
         });
 
+        if (window.location.hash) {
+            history.replaceState({}, document.title, window.location.pathname);
+        }
+
     }
 
     window.addEventListener('scroll', handleScroll);
@@ -99,321 +174,5 @@
     $(document).ready(function () {
         handleScroll();
     });
+
 </script>
-
-<style>
-    h1 {
-        font-family: 'TitleFont';
-        font-size: 50px;
-        color: white;
-    }
-
-
-    /* -----------------------section1------------------------ */
-
-    /* #titleHi {
-        font-size: 60px;
-        position: absolute;
-        top: 80px;
-    }
-    
-    .titleHi-show {
-        opacity: 1 !important;
-        transform: translateY(-20px);
-        transition: ease-in-out 1s;
-    }
-    
-    .titleHi-hide {
-        opacity: 0 !important;
-        transform: translateY(-20px);
-        transition: ease-in-out 1s;
-    } */
-
-    #titleName {
-        font-size: 40px;
-        position: absolute;
-        top: 380px;
-        right: 8%;
-    }
-
-    .titleName-show {
-        opacity: 1 !important;
-        transform: translateY(-20px);
-        transition: ease-in-out 1s;
-        transition-delay: 2.3s;
-    }
-
-    .titleName-hide {
-        opacity: 0 !important;
-        transform: translateY(0px);
-        transition: ease-in-out 0.3s;
-    }
-
-    #titleWelcome {
-        position: absolute;
-        top: 420px;
-        right: 8%;
-        font-size: 40px;
-    }
-
-    .titleWelcome-show {
-        opacity: 1 !important;
-        transform: translateY(-20px);
-        transition: ease-in-out 1s;
-        transition-delay: 2.8s;
-    }
-
-    .titleWelcome-hide {
-        opacity: 0 !important;
-        transform: translateY(0px);
-        transition: ease-in-out 0.3s;
-    }
-
-    #pageDescription {
-        position: absolute;
-        top: 490px;
-        right: 8%;
-        font-size: 20px;
-        width: 40%;
-        text-wrap: balance;
-        text-align: right;
-        color: white;
-        padding-top: 15px;
-    }
-
-    #pageDescription::before {
-        content: "";
-        display: block;
-        width: 60px;
-        height: 6px;
-        margin: 0.39285em 0 0.423em;
-        position: absolute;
-        right: 0px;
-        background: #a3d2ff;
-        top: -8px;
-    }
-
-
-    .pageDescription-show {
-        opacity: 1 !important;
-        transform: translateY(-20px);
-        transition: ease-in-out 1s;
-        transition-delay: 3.3s;
-    }
-
-    .pageDescription-hide {
-        opacity: 0 !important;
-        transform: translateY(0px);
-        transition: ease-in-out 0.3s;
-    }
-
-
-    #titleProgrammer {
-        position: absolute;
-        top: 80px;
-        left: 20%;
-    }
-
-    .titleProgrammer-show {
-        opacity: 1 !important;
-        transform: translateY(-20px);
-        transition: ease-in-out 1s;
-        transition-delay: 0s;
-    }
-
-    .titleProgrammer-hide {
-        opacity: 0 !important;
-        transform: translateY(0px);
-        transition: ease-in-out 0.3s;
-    }
-
-    #titleChallenger {
-        position: absolute;
-        top: 165px;
-        left: 35%;
-        font-size: 70px;
-
-    }
-
-    .titleChallenger-show {
-        opacity: 1 !important;
-        transform: translateY(-20px);
-        transition: ease-in-out 1s;
-        transition-delay: 0.6s;
-    }
-
-    .titleChallenger-hide {
-        opacity: 0 !important;
-        transform: translateY(0px);
-        transition: ease-in-out 0.3s;
-    }
-
-
-
-    #titleExplorer {
-
-        --hs: 225, 100%;
-        --paper: hsl(var(--hs), 25%);
-        --highlight: hsl(var(--hs), 45%);
-        --shadow: hsl(var(--hs), 15%);
-
-
-        position: absolute;
-        top: 250px;
-        left: 8%;
-        font-size: 120px;
-
-
-
-        background: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        width: fit-content;
-
-    }
-
-
-    .titleExplorer-show {
-        opacity: 1 !important;
-        transform: translateY(-20px);
-        transition: ease-in-out 1s;
-        transition-delay: 1.7s;
-    }
-
-    .titleExplorer-hide {
-        opacity: 0 !important;
-        transform: translateY(0px);
-        transition: ease-in-out 0.3s;
-    }
-
-    .gradientBack-show {
-        opacity: 1 !important;
-        /* transform: translateY(10px); */
-        transition: ease-in-out 2s;
-    }
-
-    .gradientBack-hide {
-        opacity: 0 !important;
-        /* transform: translateY(-10px); */
-        transition: ease-in-out 1s;
-    }
-
-    #section1 {
-        display: flex;
-        align-items: center;
-        place-content: center;
-        overflow: hidden;
-        position: relative;
-        height: 600px;
-        background-color: #1f1f1f;
-    }
-
-    /* -----------------------section2------------------------ */
-
-    #section2 {
-        overflow: hidden;
-        background-color: #1f1f1f;
-        height: 600px;
-        position: relative;
-
-    }
-
-    #section2 h2{
-        color:white;
-        border-left: 10px solid #a3d2ff;
-        padding: 20px 0px 0px 10px;
-    font-family: 'TitleFont';
-    margin: 30px 0px 0px 8%;
-    font-size: 55px;
-    }
-
-     
-    .qualityTitle-show {
-        opacity: 1 !important;
-        transform: translateY(-20px);
-        transition: ease-in-out 1s;
-        transition-delay: 0s;
-    }
-
-    .qualityTitle-hide {
-        opacity: 0 !important;
-        transform: translateY(0px);
-        transition: ease-in-out 0.3s;
-    }
-
-
-    #avatar {
-        position: absolute;
-        vertical-align: middle;
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        background: radial-gradient(circle, rgba(111, 134, 166, 1) 8%, rgba(179, 209, 251, 1) 79%);
-        top: 250px;
-        left: 30%;
-    }
-
-    
-    .avatar-show {
-        opacity: 1 !important;
-        transition: ease-in-out 2s;
-        transition-delay: 0s;
-    }
-
-    .avatar-hide {
-        opacity: 0 !important;
-        transition: ease-in-out 0.3s;
-    }
-    /* -----------------------section2_add------------------------ */
-#section2_add{
-        overflow: hidden;
-        background-color: #2d2d2d;
-        height: 200px;
-}
-
-    /* -----------------------section3------------------------ */
-    #section3 {
-        overflow: hidden;
-        background-color: #d9d9d9;
-        height: 600px;
-
-    }
-
-    #section4 {
-        overflow: hidden;
-        background-color: #606060;
-        height: 600px;
-
-    }
-
-    /* this background refrence:https://codepen.io/Jeromche/pen/KKQrGgP */
-
-    .gradient {
-        --size: 600px;
-        --speed: 50s;
-        --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
-        width: var(--size);
-        height: var(--size);
-        filter: blur(calc(var(--size) / 5));
-        background-image: linear-gradient(rgba(55, 235, 169, 0.85), rgb(91, 55, 235));
-        animation: rotate var(--speed) var(--easing) alternate infinite;
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-
-        z-index: 0;
-    }
-
-    .dynamicShow {
-        opacity: 0;
-    }
-
-    @media (max-width: 720px) {
-        .gradient {
-            --size: 300px;
-        }
-    }
-
-    section {
-        width: 100%;
-    }
-</style>
