@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="cssFiles/general.css">
     <link rel="stylesheet" href="cssFiles/homePage.css">
     <script src="jsFiles/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="cssFiles/charts.min.css">
 
 </head>
 
@@ -129,7 +130,49 @@
         </div>
 
     </section>
-    <section id="section4"></section>
+    <section id="section4">
+        <h2 id="InternTitle" class="dynamicShow">My internships</h2>
+        <div id="internsDiv">
+            <div id="intern2020"></div>
+            <div id="intern2023"></div>
+        </div>
+    </section>
+    <section id="section5">
+        <h2 id="AbilitiesTitle" class="dynamicShow">My abilities</h2>
+        <div id="abilitiesDiv">
+            <table id="abilitiesChart" style="height: 350px;width: 500px; color: white;"
+            class="charts-css bar show-heading show-labels  data-spacing-5 hide-data">
+
+            <tbody>
+                <tr>
+                    <th> C# </th>
+                    <td style="--size: calc( 20 / 100 ); background-color: #b05fd9;">  </td>
+                </tr>
+                <tr>
+                    <th> C </th>
+                    <td style="--size: calc( 40 / 100 );">  </td>
+                </tr>
+                <tr>
+                    <th> html/css </th>
+                    <td style="--size: calc( 88 / 100 );">  </td>
+                </tr>
+                <tr>
+                    <th> Javascript </th>
+                    <td style="--size: calc( 80 / 100 );">  </td>
+                </tr>
+                <tr>
+                    <th> Sql </th>
+                    <td style="--size: calc( 100 / 100 );">  </td>
+                </tr>
+                <tr>
+                    <th> Swift </th>
+                    <td style="--size: calc( 100 / 100 );">  </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        
+    </section>
     <footer></footer>
 </body>
 

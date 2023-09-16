@@ -872,15 +872,115 @@ h1 {
 
 
 }
+/* -----------------------section4------------------------ */
 
 #section4 {
     overflow: hidden;
-    background-color: #606060;
-    height: 600px;
+    background-color: #f1f1f1;
+    height: 750px;
 
 }
 
-/* this background refrence:https://codepen.io/Jeromche/pen/KKQrGgP */
+#section4 h2 {
+    color: rgb(60, 60, 60);
+    border-right: 10px solid #a3d2ff;
+    padding: 20px 10px 0px 10px;
+    font-family: 'TitleFont';
+    margin: 50px 8% 0px auto;
+    font-size: 55px;
+    width: fit-content;
+}
+
+
+.InternTitle-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 0s;
+}
+
+.InternTitle-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+
+#internsDiv{
+    display: flex;
+    width: 84%;
+    margin:10px 8% ;
+    height: 75%;
+}
+
+#intern2020{
+    width: 50%;
+    height: 100%;
+}
+
+
+#intern2023{
+    width: 50%;
+    height: 100%;
+}
+
+@media (min-width: 1700px) {
+    #section4 {
+        height: 800px;
+    }
+    /* #experience{
+        transform:translate(-50%, -50%) scale(1.3);
+    } */
+
+
+}
+/* -----------------------section5------------------------ */
+
+#section5{
+    overflow: hidden;
+    background-color: #474747;
+    height: 800px;
+}
+
+
+#AbilitiesTitle{
+    color: white;
+    border-left: 10px solid #a3d2ff;
+    padding: 20px 0px 0px 10px;
+    font-family: 'TitleFont';
+    margin: 50px 0px 0px 8%;
+    font-size: 55px;
+}
+
+
+.AbilitiesTitle-show{
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 0s;
+}
+
+.AbilitiesTitle-hide{
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+
+#abilitiesDiv{
+    display: flex;
+    width: 84%;
+    margin-left: 8%;
+}
+
+#abilitiesChart.bar{
+    --labels-size: 120px;
+}
+
+#abilitiesChart th{
+    align-items: self-end;
+    padding-right: 20px;
+
+}
+
 
 .gradient {
     --size: 600px;
@@ -909,3 +1009,10 @@ h1 {
 section {
     width: 100%;
 }
+
+
+
+
+/* this background refrence:https://codepen.io/Jeromche/pen/KKQrGgP */
+
+/* chart refrence: https://chartscss.org/ */
