@@ -111,7 +111,7 @@ footer {
 }
 
 .fade-down-in {
-    animation: fade-down-in 2s ease-in-out alternate;
+    animation: fade-down-in 1s ease-in-out alternate;
 }
 
 @keyframes fade-up-in {
@@ -169,4 +169,19 @@ footer {
 @font-face {
     font-family: 'MarckScript';
     src: url('../fonts/MarckScript-Regular.ttf') format('truetype');
+}
+
+
+
+@font-face {
+    font-family: 'PatuaOne';
+    src: url('../fonts/PatuaOne-Regular.ttf') format('truetype');
+}
+
+
+
+
+@font-face {
+    font-family: 'Calistoga';
+    src: url('../fonts/Calistoga-Regular.ttf') format('truetype');
 }
