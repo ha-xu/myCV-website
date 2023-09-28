@@ -1,0 +1,26 @@
+#secion1{
+    background-color: #ececec;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    padding: 50px 0px 100px 0px;
+    flex-direction: column;
+}
+
+#photoWall{
+    width: 1200px;
+    height: 700px;
+    background: #e99999;
+}
+
+#Tests{
+    width: 1200px;
+    display: flex;
+    place-content: space-between;
+}
+
+#Tests h2{
+    font-family: "Sarabun-Thin";
+    font-size: 20px;
+    letter-spacing: .3em;
+}

@@ -29,6 +29,10 @@ html{
     scroll-behavior: smooth;
 }
 
+section {
+    width: 100%;
+}
+
 /* ----------------------------header------------------------ */
 
 header {
@@ -69,7 +73,8 @@ header ul a{
 }
 
 header ul a:hover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid #a3d2ff;
 }
 
 
@@ -184,4 +189,18 @@ footer {
 @font-face {
     font-family: 'Calistoga';
     src: url('../fonts/Calistoga-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sarabun-ExtraBold';
+    src: url('../fonts/Sarabun/Sarabun-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sarabun-ExtraLight';
+    src: url('../fonts/Sarabun/Sarabun-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sarabun-Thin';
+    src: url('../fonts/Sarabun/Sarabun-Thin.ttf') format('truetype');
 }

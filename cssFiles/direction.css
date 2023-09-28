@@ -1,0 +1,18 @@
+#section1{
+    background-image: url(../images/R_cut.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+#section1 h1{
+    font-size: 100px;
+    font-family: 'Sarabun-Thin';
+    color: white;
+    letter-spacing: .2em;
+
+}
