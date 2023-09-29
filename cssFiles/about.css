@@ -1,0 +1,20 @@
+#section1{
+
+}
+
+#section1 h1{
+    margin: 100px 0px  10px 10%;
+    font-size: 100px;
+    color: white;
+    font-family: "Sarabun-ExtraBold";
+}
+
+
+#section1 h2{
+    margin: 10px 0px  20px 10%;
+    font-size: 30px;
+    color: white;
+    font-family: "HeaderFont";
+    font-style: italic;
+    letter-spacing: 0.1em;
+}

@@ -904,6 +904,10 @@ h1 {
     overflow: hidden;
     background-color: #f1f1f1;
     /* height: 750px; */
+    background-image: url(../images/anbai.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
 
 }
 
@@ -956,7 +960,8 @@ h1 {
 #intern2020 {
     width: calc(50% - 10px);
     margin: 10px 10px 10px 0px;
-    background-color: #ececec;
+    background-color: #dbdbdb3a;
+    backdrop-filter: blur(10px);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -1026,7 +1031,9 @@ h1 {
     width: calc(50% - 10px);
     margin: 10px 0px 10px 10px;
 
-    background-color: #ececec;
+    background-color: #dbdbdb3a;
+    backdrop-filter: blur(10px);
+
     text-align: center;
 
     display: flex;
@@ -1038,7 +1045,9 @@ h1 {
 #internCompany {
     width: 100%;
     margin: 10px 0px 90px 0px;
-    background-color: #ececec;
+    background-color: #dbdbdb3a;
+    backdrop-filter: blur(5px);
+
     display: flex;
     align-items: center;
 
@@ -1233,9 +1242,7 @@ h1 {
     z-index: 0;
 }
 
-.dynamicShow {
-    opacity: 0;
-}
+
 
 @media (max-width: 720px) {
     .gradient {

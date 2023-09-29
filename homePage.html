@@ -23,8 +23,8 @@
         </div>
         <ul>
             <li class="fade-down-in"><a href="experience.html">My experience</a></li>
-            <li class="fade-down-in"><a href="exploration.html">My exploration</a></li>
             <li class="fade-down-in"><a href="abilities.html">My abilities</a></li>
+            <li class="fade-down-in"><a href="exploration.html">My exploration</a></li>
             <li class="fade-down-in"><a href="direction.html">My direction</a></li>
             <li class="fade-down-in"><a href="about.html">About this Site</a></li>
         </ul>
@@ -271,44 +271,5 @@
 
 </html>
 
-<script>
-    const scrollshowObjs = document.querySelectorAll('.dynamicShow');
 
-    function handleScroll() {
-
-        var showPos = window.innerHeight / 5 * 4;
-        var hidePos = window.innerHeight / 18;
-
-        scrollshowObjs.forEach(obj => {
-            const objPosition = (obj.getBoundingClientRect().top + obj.getBoundingClientRect().bottom) / 2;
-
-            if (objPosition < showPos) {
-                if (objPosition < hidePos) {
-                    obj.classList.add(obj.id + '-hide');
-                    obj.classList.remove(obj.id + '-show');
-
-                } else {
-                    obj.classList.add(obj.id + '-show');
-                    obj.classList.remove(obj.id + '-hide');
-                }
-            } else {
-                obj.classList.add(obj.id + '-hide');
-                obj.classList.remove(obj.id + '-show');
-            }
-
-
-        });
-
-        if (window.location.hash) {
-            history.replaceState({}, document.title, window.location.pathname);
-        }
-
-    }
-
-    window.addEventListener('scroll', handleScroll);
-
-    $(document).ready(function () {
-        handleScroll();
-    });
-
-</script>
+<script src="jsFiles/scrollshow.js"></script>
