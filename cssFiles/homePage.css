@@ -581,7 +581,7 @@ h1 {
     overflow: hidden;
     background-color: #ececec;
     height: 750px;
-    background-image: url(../images/back.png);
+    background-image: url(../images/back_.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
@@ -904,7 +904,7 @@ h1 {
     overflow: hidden;
     background-color: #f1f1f1;
     /* height: 750px; */
-    background-image: url(../images/anbai.png);
+    background-image: url(../images/anbai_.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
