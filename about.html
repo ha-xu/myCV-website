@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="cssFiles/general.css">
         <link rel="stylesheet" href="cssFiles/about.css">
+        <script src="jsFiles/code.jquery.com_jquery-3.7.0.min.js"></script>
+
     </head>
     <body>
         <header class="fade-down-in">
@@ -27,36 +29,36 @@
             </div>
         </header>
         <section id="section1">
-            <h1>I CAN, SO I CREATE.</h1>
-            <h2>Websites, a fascinating way to convey information.</h2>
-            <h3>I created the site, because I have all the skills to. <br> Besides, I get so many stories to tell! <br> I couldn't wait to express myself.</h3>
-            <h5>*Photo taken at Les 2 Alpes, Grenoble, France</h5>
+            <h1 id="title1" class="dynamicShow">I CAN, SO I CREATE.</h1>
+            <h2 id="title2" class="dynamicShow">Websites, a fascinating way to convey information.</h2>
+            <h3 id="title3" class="dynamicShow">I created the site, because I have all the skills to. <br>I don't mind spending weeks or even months, <br>I just want to express myself better and let you understand me. <br>Besides, I enjoy designing.</h3>
+            <h5 id="title4" class="dynamicShow">*Photo taken at Les 2 Alpes, Grenoble, France</h5>
         </section>
         <section id="section2">
             <h1>A completely original site</h1>
             <div id="stepsDiv">
-                <div class="step">
+                <div id="step1" class="step dynamicShow">
                     <h2>Design and Coding</h2>
                     <img src="images/vscode.png">
                 </div>
-                <div class="step" style="background-color:transparent !important;padding: 50px;"> 
+                <div  id="step2" class="step_arrow dynamicShow"> 
                     <img src="images/ArrowRightIcon.png">
                 </div>
-                <div class="step">
+                <div id="step3" class="step dynamicShow">
                     <h2>Upload to Server</h2>
                     <img src="images/githubpages.png">
 
                 </div>
-                <div class="step" style="background-color:transparent !important;padding: 50px;"> 
+                <div  id="step4" class="step_arrow dynamicShow" > 
                     <img src="images/ArrowRightIcon.png">
                 </div>
-                <div class="step">
+                <div id="step5" class="step dynamicShow">
                     <h2>Publish it online</h2>
                     <img src="images/googleDomains.png">
 
                 </div>
             </div>
-            <div id="stepDetailDiv">
+            <div  id="stepDetailDiv" class="dynamicShow">
                 <ul>
                     <li>Design the site by HTML,CSS,Javascript with Visual Studio Code.</li>
                     <li>Upload the whole site to GitHub Pages, which helps me to manage and update.</li>
@@ -64,11 +66,11 @@
                 </ul>
             </div>
             <div id="toolsDiv">
-                <div class="tool">
+                <div id="step7" class="tool dynamicShow">
                     <p>All vector images in this site designed by Adobe Illustrator.</p>
                     <img src="images/ai.png">
                 </div>
-                <div class="tool">
+                <div id="step8" class="tool dynamicShow">
                     <p>All photos in this site modified by Adobe Photoshop.</p>
                     <img src="images/ps.png">
                 </div>
@@ -79,8 +81,10 @@
             <h2></h2>
             <div id="gitDiv">
                 <img src="images/git.png">
+                <p id="gittxt" class="dynamicShow">A powerful tool for coding, I use Git to back up and manage my website.<br>It also allows me to work on multiple devices.</p>
             </div>
         </section>
         <section id="section4"></section>
     </body>
 </html>
+<script src="jsFiles/scrollshow.js"></script>

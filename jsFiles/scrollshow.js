@@ -5,7 +5,7 @@ const scrollshowObjs = document.querySelectorAll('.dynamicShow');
 function handleScroll() {
 
     var showPos = window.innerHeight / 10 * 9;
-    var hidePos = window.innerHeight / 18;
+    var hidePos = window.innerHeight / 20;
 
     scrollshowObjs.forEach(obj => {
         const objPosition = (obj.getBoundingClientRect().top + obj.getBoundingClientRect().bottom) / 2;
