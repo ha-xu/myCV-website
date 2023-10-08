@@ -633,7 +633,7 @@ h1 {
 #section3 {
     overflow: hidden;
     background-color: #ececec;
-    height: 750px;
+    height: 770px;
     background-image: url(../images/back_.png);
     background-repeat: no-repeat;
     background-position: left;
@@ -1097,7 +1097,7 @@ h1 {
 
 #internCompany {
     width: 100%;
-    margin: 10px 0px 90px 0px;
+    margin: 10px 0px 0px 0px;
     background-color: #dbdbdb3a;
     backdrop-filter: blur(5px);
 
@@ -1154,7 +1154,6 @@ h1 {
 #section5 {
     overflow: hidden;
     background-color: #474747;
-    padding-bottom: 80px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1217,21 +1216,18 @@ h1 {
     margin-bottom: 40px;
 }
 
-/* .abilityInnerDiv{
-    width: 100%;
-    height: 400px;
-    background-color: #09f1b8;
-} */
+.link{
+    margin: 0px 0px 0px 0px;
 
-/* #abilitiesChart.bar{
-    --labels-size: 120px;
+    font-size: 18px;
+    color:rgb(134, 192, 242);
 }
 
-#abilitiesChart th{
-    align-items: self-end;
-    padding-right: 20px;
+.link:hover{
+    text-decoration: underline
 
-} */
+}
+
 @media (min-width: 1700px) {
 
 
