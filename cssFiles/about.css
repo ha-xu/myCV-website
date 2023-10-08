@@ -96,7 +96,7 @@
 
 #section2 {
     text-align: center;
-    background:rgb(147 190 197);
+    background:#b2d2db;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,7 +130,7 @@
     align-items: center;
     background-color: rgba(226, 226, 226, 0.3);
     backdrop-filter: blur(10px);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .step_arrow{
@@ -161,7 +161,7 @@
     background-color: rgba(233, 233, 233, 0.3);
     backdrop-filter: blur(10px);    width: 1095px;
     margin: 30px 0px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 15px 45px;
 
 }
@@ -191,7 +191,7 @@
     backdrop-filter: blur(10px);    display: flex;
     align-items: center;
     text-align: left;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .tool p{
@@ -351,7 +351,7 @@
     font-family: 'TitleFont';
     background-color: rgb(229 226 223);
     padding: 10px 15px;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 865px;
 }
 
@@ -377,3 +377,26 @@
 
 
 
+#cvxu{
+    height: auto;
+    background: rgb(246,195,155);
+    background: linear-gradient(61deg, rgba(246,195,155,1) 0%, rgba(176,167,254,1) 100%);
+ display: flex;
+    place-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#cvxu h2{
+    font-family: 'TitleFont';
+    margin:50px 0px 10px 0px;
+    font-size: 35px;
+    color: rgb(56, 56, 56);
+}
+
+#cvxu p{
+    color: rgb(69, 69, 69);
+
+    font-size: 20px;
+    margin-bottom: 50px;
+}

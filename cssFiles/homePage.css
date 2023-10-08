@@ -252,7 +252,7 @@ h1 {
 
 /* -----------------------section2------------------------ */
 
-#section2 {
+/* #section2 {
     overflow: hidden;
     background-color: #1f1f1f;
     position: relative;
@@ -297,19 +297,71 @@ h1 {
     width: 1200px;
     height: 460px;
 
+} */
+
+#introduction{
+    display: flex;
+    padding: 60px 0px;
+    place-content: center   ;
+
+
+    background-image: url(../images/qualityBack.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#infoDiv{
+}
+
+#right{
+    margin:0px 50px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+}
+
+#right h1{
+    font-size: 30px;
+    margin: 20px 0px;
 }
 
 #avatar {
-    position: absolute;
-    vertical-align: middle;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
+    width: 170px;
+    height: 210px;
+    border-radius: 15px;
+    object-fit: cover;
+
     background: radial-gradient(circle, rgba(111, 134, 166, 1) 8%, rgba(179, 209, 251, 1) 79%);
-    top: 150px;
-    left: 330px;
 }
 
+.line{
+    padding: 10px;
+}
+
+#infoDiv p{
+    /* font-size: 23px; */
+    color: #ececec;
+    width: fit-content;
+    /* margin: 10px; */
+}
+
+.titles{
+    font-size: 15px;
+    background-color: #686868;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.content{
+    font-size: 22px;
+    background-color: #1277b2;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+/* 
 #avatarDiv {
     position: absolute;
     top: 0px;
@@ -539,10 +591,11 @@ h1 {
     #Creativity {
         font-size: 30px;
     } */
-}
+/* } */
 
 
 /* -----------------------section2_add------------------------ */
+/*  
 #section2_add {
     overflow: hidden;
     background-color: #2d2d2d;
@@ -574,7 +627,7 @@ h1 {
 }
 
 
-@media (min-width: 1700px) {}
+@media (min-width: 1700px) {} */
 
 /* -----------------------section3------------------------ */
 #section3 {
@@ -1142,15 +1195,14 @@ h1 {
 
 .abilityDiv {
     margin: 10px;
-    width: 30%;
-    max-width: 550px;
+    width: 400px;
     background-color: #595959;
 }
 
 .abilityDiv h1{
     padding:30px 30px 15px 30px;
-    font-family: 'HeaderFont';
-    font-size: 40px;
+    font-family: "Sarabun-ExtraBold";
+    font-size: 30px;
 }
 
 .abilityDiv p{
