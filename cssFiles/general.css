@@ -84,6 +84,7 @@ header ul a:hover{
     height: 50px;
     align-items: center;
     margin-left: 20px;
+    width: fit-content;
 
 }
 #homeLink img{
