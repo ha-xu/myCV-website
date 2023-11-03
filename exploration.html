@@ -1,31 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="cssFiles/general.css">
-    </head>
-    <body>
-        <header class="fade-down-in">
-            <div id="headerFront">
-                <a href="homePage.html" title="Go to the HomePage" id="homeLink" class="fade-down-in"><img
-                        src="images/home_icon.png"></a>
-            </div>
-            <ul>
-                <li class="fade-down-in"><a href="experience.html">My experience</a></li>
-                <li class="fade-down-in"><a href="abilities.html">My abilities</a></li>
-                <li class="fade-down-in"><a href="exploration.html"  style="border-bottom: 5px solid #a3d2ff;">My exploration</a></li>
-                <li class="fade-down-in"><a href="direction.html">My direction</a></li>
-                <li class="fade-down-in"><a href="about.html">About this Site</a></li>
-            </ul>
-            <div id="headerBack">
-                <p id="headerName">XU ZIHAN</p>
-            </div>
-        </header>
-        <section id="section1">
-        </section>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cssFiles/general.css">
+    <link rel="stylesheet" href="cssFiles/exploration.css">
+
+</head>
+
+<body>
+    <header class="fade-down-in">
+        <div id="headerFront">
+            <a href="homePage.html" title="Go to the HomePage" id="homeLink" class="fade-down-in"><img
+                    src="images/home_icon.png"></a>
+        </div>
+        <ul>
+            <li class="fade-down-in"><a href="experience.html">My experience</a></li>
+            <li class="fade-down-in"><a href="abilities.html">My abilities</a></li>
+            <li class="fade-down-in"><a href="exploration.html" style="border-bottom: 5px solid #a3d2ff;">My
+                    exploration</a></li>
+            <li class="fade-down-in"><a href="direction.html">My direction</a></li>
+            <li class="fade-down-in"><a href="about.html">About this Site</a></li>
+        </ul>
+        <div id="headerBack">
+            <p id="headerName">XU ZIHAN</p>
+        </div>
+    </header>
+    <section id="section1">
+        <h1>Here are my <span style="background: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">explorations</span></h1>
+        <div style="display: flex;flex-direction: column;place-content: start;">
+            <a href="#section2">→Internship: Data Manage Platform</a>
+            <a href="#section3">→Unity Engine Game Design</a>
+            <a href="#section4">→Xcode IOS Application build</a>
+        </div>
+    </section>
+
+    <section id="section2">
+        
+        <h1 class="ExpMainTitle">After-sale products management platform</h1>
+        <div style="display: flex;">
+        <div style="margin-left: 8%;">
+        <p class="ExpContent">This is a website for <span style="color:#ffaf58 ;">managing after-sales products</span>, which I completed during my second internship. Many experienced and excellent colleagues guided me in realizing this work.</p>
+        <p class="ExpContent">It is built on <span style="color:#ffaf58 ;">ASP.NET</span>, with the interface implemented through <span style="color:#ffaf58 ;">web pages</span>. The backend is written in <span style="color:#ffaf58 ;">C#</span>, and the data is stored in the enterprise server's <span style="color:#ffaf58 ;">database</span>.</p>
+        <p class="ExpContent">The <span style="color:#ffaf58 ;">purpose</span> of this platform is to manage instruments that users send back for repairs. Staff in various positions are shown different information to <span style="color:#ffaf58 ;">manage and control</span> the <span style="color:#ffaf58 ;">registration</span>, <span style="color:#ffaf58 ;">evaluation</span>, <span style="color:#ffaf58 ;">repair</span>, and <span style="color:#ffaf58 ;">shipping</span> statuses of the instruments, ultimately returning them to the customers.</p>
+    </div>
+    <div style="padding-top: 30px;">
+        <img src="images/AMSLogin_m.png" style="width: 500px; height: 350px;">
+        <p style="color: white; text-align: right; font-size: 15px;">Login page of the platform</p>
+    </div>
+
+</div>
+
+<h2 class="little_titles">&bull;&nbsp;Structure of the interface&nbsp;&bull;</h2>
+<div style="display: flex; flex-direction: column;align-items: center;">
+    <img src="images/AMS_Tables_tran.png" width="85%">
+    <div style="display: flex;width: 100%; place-content: center;margin:45px 0px;">
+        <div style="width: 40%; display: flex;margin-right: 20px;">
+            <img style="width: 20%;height: fit-content;" src="images/arrowup.png">
+            <p class="ExpMid">Different tables list instruments in various states, and individuals in different positions can access the corresponding tables. Managers can oversee the entire process. Every User can change the state of the instrument by click the buttons. </p>
+        </div>
+        <div style="width: 40%; display: flex;margin-left: 20px; align-items: end; ">
+            <p class="ExpMid">The  <span style="color:#ffaf58 ;">core</span> of the platform is a <span style="color:#ffaf58 ;">database</span> system. When users modify or add data, the changes are presented in real-time on the web page through <span style="color:#ffaf58 ;">AJAX</span> technology.</p>
+            <img style="width: 20%;height: fit-content; transform: rotateX(180deg);" src="images/arrowup.png">
+        </div>
+    </div>
+    <img src="images/AMSsqlschema_tran.png" width="85%">
+    <p style="color: white; font-size: 19px;max-width: 80%; margin: 0px 0px 25px 0px;">*Schema generated by Microsoft Sql Server Management Studio</p>
+
+    <p style="color: #9e9e9e; font-size: 23px;max-width: 80%; margin: 25px 0px 0px 0px;">I try to introduce briefly, thus many pages in the platform have been omitted.</p>
+    <p style="color: white; font-size: 28px;max-width: 80%; margin: 10px 0px 50px 0px;">This platform has undergone multiple revisions and tests, and is now officially in use.</p>
+</div>
+    </section>
+    <section id="section3">
+        <h1 class="ExpMainTitle2">Unity Engine Game Design</h1>
+
+    </section>
+
+    <section id="section4" >
+        <h1 class="ExpMainTitle">Xcode IOS Application Build</h1>
+
+    </section>
+</body>
+
 </html>

@@ -315,24 +315,27 @@ h1 {
 }
 
 #right{
-    margin:0px 50px;
+    margin:0px 15px;
+    padding: 12px 0px;
     display: flex;
     flex-direction: column;
-    place-content: center;
+    place-content: space-between;
     align-items: center;
 }
 
 #right h1{
-    font-size: 30px;
-    margin: 20px 0px;
+    font-size: 33px;
+    border: 3px solid white;
+    padding: 4px 15px;
+    border-radius: 10px;
 }
 
 #avatar {
-    width: 170px;
-    height: 210px;
-    border-radius: 15px;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
     object-fit: cover;
-
+    margin: 15px 0px;
     background: radial-gradient(circle, rgba(111, 134, 166, 1) 8%, rgba(179, 209, 251, 1) 79%);
 }
 
@@ -360,6 +363,23 @@ h1 {
     background-color: #1277b2;
     padding: 3px 7px;
     border-radius: 5px;
+}
+
+#middle{
+    margin:0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.Note{
+    
+    display: flex;
+    font-size: 26px;
+    background: #12b289;
+    padding: 12px 12px;
+    border-radius: 10px;
+    color: white;
+    margin: 9px 0px;
+    width: fit-content;
 }
 /* 
 #avatarDiv {
