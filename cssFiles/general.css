@@ -105,9 +105,95 @@ header ul a:hover{
 
 
 footer {
-    height: 250px;
-    background-color: #161616;
+    position: relative;
+    background-color: #0e0e0e;
     width: 100%;
+    padding: 30px 0px 20px 0px;
+
+}
+
+.footerL1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+    color: white;
+}
+
+.footerL1 h3{
+   font-size: 25px;
+   padding: 20px;
+}
+
+
+.footerL1 p{
+    color: rgb(120, 120, 120);
+    font-size: 14px;
+    padding: 2px;
+
+}
+
+
+.footerL2{
+
+    display: flex;
+    place-content: center;
+    padding: 15px 0px;
+}
+
+.footerCell{
+    border-top: 1px solid rgb(86, 86, 86);
+
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 40px 20px;
+
+    border-bottom: 1px solid rgb(86, 86, 86);
+
+}
+
+.footerCell h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.footerCell p{
+    color: white;
+}
+
+
+.footerCell a{
+    color: white;
+}
+
+.footerCell a:hover{
+    text-decoration: underline;
+}
+
+.subLink{
+    font-size: 15px;
+    color: #e0e0e0 !important;
+    padding-left: 30px;
+}
+
+.backtop{
+    position: absolute;
+    top: 50px;
+    right: 8%;
+    padding: 5px 8px;
+    background-color: #232323;
+    border-radius: 10px;
+    transition: ease-in-out 0.5s;
+}
+
+.backtop:hover{
+    background-color: #373737;
+}
+
+
+.backtop img{
+    width: 50px;
 }
 
 

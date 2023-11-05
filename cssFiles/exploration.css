@@ -26,7 +26,7 @@
     color:rgb(111, 167, 216);
 }
 
-#section2{
+#ManagementPlatform{
     background-color: #242424;
 }
 
@@ -105,8 +105,8 @@
     margin: 0px 15px;
 }
 
-#section4{
-    background-color: #242424;
+#Software{
+    background-color: #181818;
 }
 
 .introGame{
@@ -120,4 +120,15 @@
 .introArrow{
     width: 50px;
     margin: 10px;
+}
+
+.introSW{
+    color: white;
+    background: #282828;
+    padding:20px 25px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0px 30px;
+    font-size: 30px;
+    height: fit-content;
 }
