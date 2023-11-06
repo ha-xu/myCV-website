@@ -315,7 +315,7 @@ h1 {
 
 #right {
     margin: 0px 15px;
-    padding: 12px 0px;
+    padding: 8px 0px;
     display: flex;
     flex-direction: column;
     place-content: space-between;
