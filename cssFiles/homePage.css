@@ -1279,12 +1279,14 @@ h1 {
     font-size: 50px;
     font-family: 'TitleFont';
     color: #ffe37d;
+    z-index: 10;
+
 }
 
 #es {
     font-size: 100px;
     margin: 00px 20px 0px 8%;
-
+    z-index: 10;
 }
 
 .lCell {

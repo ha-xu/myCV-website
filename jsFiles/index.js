@@ -53,8 +53,13 @@ function tryGetCode() {
     var encryptedCode = CryptoJS.SHA3(pwValue);
 
     if (encryptedCode.toString() == "98e2bdf3d45828f1d0d90e31157a613b6d1b27b52955f3d394b612fd1b29c88408bc2bb2cbb8eebd300484a2a791028ebb57fdcca4d7fd2449b4e139078b244e") {
-
-      window.location.href = "homePage.html";
+      $("#PWEnterBox input").val("0130");
+      $("#PWEnterBox a img").attr("src", "images/doneIcon.png");
+      $("#PWEnterBox a").css("background-color", "rgb(75 189 103)");
+      setTimeout(function () {
+        window.location.href = "homePage.html";
+      }, 1000);
+      //window.location.href = "homePage.html";
     } else {
       $("#PWEnterBox input").val(pwValue);
       $("#PWEnterBox a img").attr("src", "images/xIcon.png");
