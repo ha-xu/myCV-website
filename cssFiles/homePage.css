@@ -1042,6 +1042,21 @@ h1 {
     align-items: center;
 }
 
+
+.intern2020-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 0s;
+
+}
+
+.intern2020-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+
 #desc2020 {
     width: 80%;
     margin: 20px 0px;
@@ -1116,6 +1131,21 @@ h1 {
 
 }
 
+
+.intern2023-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 0.3s;
+
+}
+
+.intern2023-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+
 #internCompany {
     width: 100%;
     margin: 10px 0px 0px 0px;
@@ -1125,6 +1155,21 @@ h1 {
     display: flex;
     align-items: center;
 
+}
+
+
+.internCompany-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 0s;
+
+}
+
+.internCompany-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
 }
 
 #internCompany h4 {
@@ -1248,6 +1293,128 @@ h1 {
     text-decoration: underline
 }
 
+
+.ab1-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 0s;
+
+}
+
+.ab1-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+.ab2-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 0.2s;
+
+}
+
+.ab2-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+.ab3-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 0.4s;
+
+}
+
+.ab3-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+.ab4-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 0.6s;
+
+}
+
+.ab4-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+.ab5-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 0.8s;
+
+}
+
+.ab5-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+.ab6-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 1s;
+
+}
+
+.ab6-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+.ab7-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 1.2s;
+
+}
+
+.ab7-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+.ab8-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 1.4s;
+
+}
+
+.ab8-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+.ab9-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 1.6s;
+
+}
+
+.ab9-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+
+
+
+
 @media (min-width: 1700px) {}
 
 /* -------------section6--------------- */
@@ -1320,6 +1487,49 @@ h1 {
     color: rgb(255, 255, 255);
     font-size: 24px;
 
+}
+
+.c1-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 0s;
+
+}
+
+.c1-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+
+.c2-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 0.3s;
+
+}
+
+.c2-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+}
+
+
+.c3-show {
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 0.6s;
+
+}
+
+.c3-hide {
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
 }
 
 @media (min-width: 1700px) {
