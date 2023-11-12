@@ -370,10 +370,6 @@
 }
 
 
-#section4{
-    height: 400px;
-
-}
 
 
 
@@ -399,4 +395,34 @@
 
     font-size: 20px;
     margin-bottom: 50px;
+}
+
+
+
+#section4{
+padding: 120px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+
+    
+    background-image: url(../images/end.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#section4 h1{
+    color: white;
+    font-size: 50px;
+    font-family:"MarckScript" ;
+}
+
+
+#section4 h3{
+    color: white;
+    padding: 20px 0px;
+    font-size: 35px;
+    font-family:"MarckScript" ;
 }
