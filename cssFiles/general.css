@@ -327,3 +327,11 @@ footer {
     font-family: 'Sarabun-Thin';
     src: url('../fonts/Sarabun/Sarabun-Thin.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'IndieFlower-Regular';
+    src: url('../fonts/IndieFlower-Regular.ttf') format('truetype');
+}
+
+
+

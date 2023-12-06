@@ -397,7 +397,33 @@
     margin-bottom: 50px;
 }
 
+#sectionPassion{
+    padding: 50px 0px 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
 
+    
+    background-image: url(../images/paper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#sectionPassion h1{
+    color: rgb(35, 35, 35);
+    font-size: 50px;
+    padding-bottom: 30px;
+    font-family: 'IndieFlower-Regular';
+}
+
+#sectionPassion h3{
+    color: rgb(35, 35, 35);
+    font-size: 35px;        width: 950px;
+    font-family: 'IndieFlower-Regular';
+
+}
 
 #section4{
 padding: 120px 0px;
@@ -421,6 +447,7 @@ padding: 120px 0px;
 
 
 #section4 h3{
+
     color: white;
     padding: 20px 0px;
     font-size: 35px;
