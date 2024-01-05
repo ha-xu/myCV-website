@@ -166,6 +166,7 @@
     position: relative;
 }
 
+
 #mainTitle {
     font-size: 55px;
     top: 100px;
@@ -278,6 +279,29 @@
     image-rendering: optimizeSpeed;
 
 }
+
+.desc_right img{
+    transition: ease-in-out 0.3s;
+}
+
+.desc_left img{
+    transition: ease-in-out 0.3s;
+}
+
+.desc_right img:hover{
+    z-index: 10;
+    transform: scale(1.02);
+    transition-delay: 0s !important;
+}
+
+.desc_left img:hover{
+    z-index: 10;
+    transform: scale(1.02);
+    transition-delay: 0s !important;
+
+}
+
+
 
 .desc_right p {
     margin-top: 10px;
@@ -464,12 +488,10 @@
 
 #sheetpic{
     transition: ease-in-out 0.3s;
-
 }
 
 #sheetpic:hover{
     z-index: 10;
-
 }
 
 .exp6-show {
@@ -505,8 +527,8 @@
 .picSki-show{
     opacity: 1 !important;
     transform: translateY(-20px);
-    transition: ease-in-out 1s;
-    transition-delay: 2s;
+    transition: ease-in-out 1s !important;
+    transition-delay: 2s !important;
 
 }
 
