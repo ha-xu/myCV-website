@@ -249,7 +249,6 @@
 
 }
 
-.photos {}
 
 .desc_left {
     display: flex;
@@ -463,6 +462,16 @@
     top: 2700px;
 }
 
+#sheetpic{
+    transition: ease-in-out 0.3s;
+
+}
+
+#sheetpic:hover{
+    z-index: 10;
+
+}
+
 .exp6-show {
     opacity: 1 !important;
     transform: translateY(-20px);
@@ -491,6 +500,21 @@
     opacity: 0 !important;
     transform: translateY(0px);
     transition: ease-in-out 0.3s;
+}
+
+.picSki-show{
+    opacity: 1 !important;
+    transform: translateY(-20px);
+    transition: ease-in-out 1s;
+    transition-delay: 2s;
+
+}
+
+.picSki-hide{
+    opacity: 0 !important;
+    transform: translateY(0px);
+    transition: ease-in-out 0.3s;
+
 }
 
 #exp7 {
