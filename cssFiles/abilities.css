@@ -272,3 +272,95 @@ width: fit-content;
     text-decoration: underline
 
 }
+
+
+#projects_section{
+    display: flex;
+    place-content: center;
+    align-items: center;
+    padding: 20px 0px 100px 0px; 
+    flex-direction: column;
+    background-color: #161616;
+}
+
+#projects_section h1{
+    color: #e9e9e9;
+    font-size: 35px;
+    margin: 50px 0px 30px 0px;
+}
+
+#title_border{
+    max-width: 1000px;
+    width: 76%;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    border-bottom: 0.7px solid white;
+}
+
+#projectlist{
+    max-width: 1000px;
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+.project{
+    margin: 16px 0px;
+    width: 100%;
+    border-radius: 8px;
+    background: rgb(60, 60, 60);
+    transition: ease-in-out 0.6s ;
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+}
+
+.left_div{
+    padding: 10px 10px;
+}
+
+.points{
+    display: flex;
+    
+}
+
+.points h3{
+    width: fit-content;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    margin-right: 8px;
+}
+
+.left_div h4{
+    padding: 8px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.right_div{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 0px 20px;
+    min-width: 180px;
+}
+
+.right_div h5{
+    padding: 5px 0px;
+    color: white;
+    font-size: 15px;
+}
+
+.right_div h6{
+    color: rgb(217, 217, 217);
+    font-size: 13px;
+}
+/* 
+.project:hover{
+    border-radius: 23px;
+    height: 350px;
+    box-shadow:  rgba(0, 0, 0, 0.7) 0px 2px 20px -10px;
+} */
