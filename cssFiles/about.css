@@ -355,6 +355,18 @@
     width: 865px;
 }
 
+#gitDiv a{
+    position: absolute;
+    left: 285px;
+    top: 250px;
+    font-size: 18px;
+    color:rgb(40, 84, 122);
+}
+
+#gitDiv a:hover{
+    text-decoration: underline
+
+}
 
 .gittxt-show {
     opacity: 1 !important;
